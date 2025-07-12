@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.ts",
+    "build": "npm install && npx tsc",
+    "start": "node build/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.8",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "redis": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.3",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
